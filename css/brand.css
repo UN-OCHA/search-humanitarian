@@ -94,4 +94,21 @@
   --brand-secondary: var(--cd-grey--dark);
   --brand-grey: var(--cd-blue-grey);
   --brand-logo-width: 186px;
+
+  /* Color palette */
+  --cd-reliefweb-brand-blue: #0988bb;
+  --cd-reliefweb-brand-red: #f65c51;
+  --cd-reliefweb-brand-blue--dark: #055372;
+  --cd-reliefweb-brand-red--dark: #eb1405;
+  --cd-reliefweb-brand-grey--dark: #2e3436;
+  /* #2e3436 with 0.85 opacity on white. */
+  --cd-reliefweb-brand-grey--mid: #4d5254;
+  --cd-reliefweb-brand-grey--light: #e6ecef;
+
+  --brand-primary: var(--cd-reliefweb-brand-blue--dark);
+  --brand-primary--light: var(--cd-blue--bright);
+  --brand-primary--dark: #04415a;
+  --brand-highlight: var(--cd-reliefweb-brand-red--dark);
+  --brand-grey: var(--cd-reliefweb-brand-grey--light);
+  --brand-logo-width: 140px;
 }
