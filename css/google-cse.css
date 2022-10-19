@@ -1,0 +1,64 @@
+/* stylelint-disable selector-id-pattern, selector-class-pattern */
+/**
+ * Override Google custom search engine
+ *
+ * All selectors are exact duplicates of the Google-provided selectors so that
+ * we can override them.
+ */
+
+.gsc-control-cse {
+  padding: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+  margin-top: 1rem;
+}
+
+.gsib_a {
+  padding: 9px !important;
+}
+
+/* mobile+en.css */
+.gsc-input-box {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.gsc-input {
+  padding-right: 0 !important;
+  background-image: none !important;
+}
+
+.gsc-search-button {
+  margin-left: 0 !important;
+}
+
+.gsc-search-button-v2 {
+  height: 44px !important;
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+}
+.gsc-search-button-v2,
+.gsc-search-button-v2:hover,
+.gsc-search-button-v2:focus {
+  border-color: var(--brand-secondary) !important;
+  background-color: var(--brand-secondary) !important;
+}
+
+.gs-webResult.gs-result a.gs-title:link {
+  color: var(--brand-primary--dark) !important;
+}
+
+.gs-web-image-box,
+.gs-promotion-image-box {
+  margin-right: 0.5rem !important;
+}
+
+.gs-webResult:not(.gs-no-results-result):not(.gs-error-result) .gs-snippet,
+.gs-fileFormatType,
+.gsc-result-info {
+  color: var(--cd-grey--dark) !important;
+}
+
+.gs-webResult div.gs-visibleUrl {
+  color: var(--cd-ocha-blue) !important;
+}

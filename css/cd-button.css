@@ -1,0 +1,80 @@
+/**
+ * CD Button
+ *
+ * Defines default button styles plus many variants to suit different use-cases.
+ */
+
+/* Default button */
+.cd-button {
+  width: auto;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition:
+    background-color 0.6s ease-out,
+    color 0.6s ease-out;
+  text-align: center;
+  color: var(--cd-white);
+  border: 2px solid transparent;
+  border-radius: 3px;
+  background-color: var(--brand-primary);
+  box-shadow: none;
+  font-size: 1rem;
+  line-height: 1.15;
+  -webkit-appearance: none;
+}
+
+.cd-button:hover,
+.cd-button:focus {
+  color: var(--cd-white);
+  background-color: var(--brand-primary--light);
+}
+
+.cd-button:focus {
+  border: 2px solid var(--brand-primary--dark);
+  /* We remove the outline because we are adding a border. */
+  /* so the rounded corners look nicer on hover */
+  outline: 0 solid var(--brand-primary--light);
+}
+
+/* For buttons on dark backgrounds */
+.cd-button--light {
+  color: var(--brand-primary--dark);
+  background-color: var(--brand-primary--light);
+}
+
+.cd-button--light:hover,
+.cd-button--light:focus {
+  color: var(--brand-primary--dark);
+  background-color: var(--brand-primary--light);
+}
+
+/* When it's an anchor styled as a button */
+a.cd-button {
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cd-button--outline {
+  color: var(--brand-primary);
+  border-color: var(--brand-primary);
+  background-color: var(--cd-white);
+  fill: currentColor;
+}
+
+.cd-button--outline:hover,
+.cd-button--outline:focus {
+  color: var(--cd-white);
+  border-color: var(--brand-primary--dark);
+  background-color: var(--brand-primary);
+}
+
+/* Utility classes */
+.cd-button--bold {
+  font-weight: bold;
+}
+
+.cd-button--uppercase {
+  text-transform: uppercase;
+}
